@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#087fba">
+<title>Mind Map Race — Asmaul Husna</title>
+<style>
+:root{--blue:#087fba;--navy:#17466b;--sky:#eaf8ff;--green:#159768;--gold:#ffd166;--pink:#ff8eae;--purple:#a58ae8;--ink:#203e55}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(135deg,#e4f7ff,#fff8e5);min-height:100vh}
+header{padding:22px 14px 26px;text-align:center;color:white;background:linear-gradient(130deg,#0587c5,#174b85);border-radius:0 0 26px 26px}
+header .emoji{font-size:32px}h1{font-size:clamp(27px,6vw,42px);margin:3px 0}header p{margin:5px 0}
+main{max-width:980px;margin:18px auto;padding:0 12px 28px}
+.card{background:white;border:2px solid #c5eaff;border-radius:20px;padding:17px;margin-bottom:14px;box-shadow:0 4px 0 #d5effa}
+h2{color:#08639b;margin:0 0 12px}.muted{font-size:14px;color:#648096;line-height:1.5}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.pill{background:#e8f7ff;border-radius:99px;padding:7px 11px;font-weight:800;font-size:13px}
+button{font:inherit;font-weight:800;border:0;border-radius:12px;padding:12px 14px;background:var(--blue);color:white;cursor:pointer;box-shadow:0 3px #075889}
+button:disabled{opacity:.55;cursor:not-allowed}.primary{background:var(--gold);color:#674900;box-shadow:0 3px #d7a128}.light{background:#e8f6ff;color:#07558b;box-shadow:none;border:1px solid #b6e2f7}.full{width:100%}
+.hidden{display:none!important}.progress{height:9px;background:#e6edf2;border-radius:99px;overflow:hidden;margin:13px 0}.progress>div{height:100%;width:0;background:linear-gradient(90deg,#1ab27a,#ffd166);transition:width .25s}
+.options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.option{background:#f4fbff;color:#244963;border:2px solid #c6e7f6;box-shadow:none;text-align:left;min-height:52px}.option.correct{background:#def9eb;border-color:#159768;color:#086b48}.option.wrong{background:#fff0f4;border-color:#ef82a1;color:#a32850}
+.feedback{padding:12px;border-radius:13px;margin:12px 0;line-height:1.5;font-weight:650}.good{background:#def9eb;color:#086b48}.bad{background:#fff0f4;color:#a32850}.hint{background:#fff6d9;color:#765300}
+.map{display:grid;grid-template-columns:1fr 115px 1fr;align-items:center;gap:9px;margin:16px 0}.branches{display:flex;flex-direction:column;gap:11px}.hub{aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#ffe78a,#ffbf37);border:4px solid #fff1b6;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:14px;padding:8px;box-shadow:0 4px #e3a42b}
+.slot{min-height:91px;border:2px dashed #9bcfe8;border-radius:15px;padding:9px;background:#f8fcff;text-align:center}.slot strong{display:block;font-size:12px;margin-bottom:7px}.slot .drop{display:flex;align-items:center;justify-content:center;min-height:37px;border-radius:9px;background:white;border:1px solid #d5e4ec;font-size:13px;padding:5px;color:#547086}.slot.over{outline:3px solid #55b6e6}.slot.filled .drop{background:#e8f7ff;color:#07558b;font-weight:800}
+.bank{display:flex;gap:8px;flex-wrap:wrap;padding:12px;background:#f1f9ff;border-radius:14px;min-height:55px}.tile{background:white;color:#24506d;border:2px solid #9fd4ef;box-shadow:0 2px #c4e6f6;padding:9px 11px;border-radius:11px;cursor:grab;touch-action:manipulation;font-size:14px}.tile.selected{outline:3px solid #ffca42;background:#fff8dd}.tile.used{opacity:.35}.small{font-size:12px}.result-score{font-size:38px;font-weight:950;color:#087fba;text-align:center}
+@media(max-width:560px){.card{padding:13px}.options{grid-template-columns:1fr}.map{grid-template-columns:1fr 72px 1fr;gap:5px}.slot{padding:6px;min-height:100px}.slot strong{font-size:10px}.slot .drop{font-size:11px;min-height:42px}.hub{font-size:11px}.tile{font-size:12px;padding:8px}.row .pill{font-size:12px}}
+</style>
+</head>
+<body>
+<header><div class="emoji">🌙 ⭐ 🕌</div><div><b>GAME EDUKASI DIGITAL • SD/MI</b></div><h1>Mind Map Race</h1><div style="font-size:22px;font-weight:900">Asmaul Husna</div><p>Kenali • Pahami • Amalkan</p></header>
+<main>
+<section class="card" id="home">
+ <div style="text-align:center;font-size:44px">📚 👧🏻 🧒🏻 ⭐</div>
+ <h2 style="text-align:center">Siap menjadi Penjelajah Asmaul Husna?</h2>
+ <p>Jawab kuis, seret kata ke cabang mind map, dan selesaikan tantangan sebelum waktu habis!</p>
+ <div class="row"><span class="pill">🎮 Individu</span><span class="pill">🧠 3 Level</span><span class="pill">🏆 Skor otomatis</span></div>
+ <div style="background:#fff8df;border-radius:15px;padding:13px;margin:16px 0"><h2>📜 Aturan main</h2><ul style="line-height:1.8;padding-left:22px"><li>Level 1: jawab 3 soal pilihan ganda.</li><li>Level 2: seret atau ketuk kata untuk melengkapi mind map.</li><li>Level 3: jawab cepat sebelum timer 20 detik habis.</li><li>Jawaban benar bernilai 10 poin; tiga jawaban benar beruntun mendapat bonus 5 poin.</li><li>Di Level 2, setiap cabang benar bernilai 5 poin dan mind map lengkap mendapat bonus 10 poin.</li></ul></div>
+ <button class="primary full" onclick="startGame()">🚀 MULAI GAME</button>
+</section>
+<section class="card hidden" id="game">
+ <div class="row"><span class="pill" id="levelPill">Level 1</span><span class="pill">⭐ <span id="score">0</span> poin</span><span class="pill" id="timer">⏱️ —</span></div>
+ <div class="progress"><div id="bar"></div></div><h2 id="title"></h2><div id="play"></div><div id="feedback" aria-live="polite"></div>
+ <button id="next" class="full hidden" onclick="advance()">Tantangan berikutnya ➜</button>
+</section>
+<section class="card hidden" id="result">
+ <div style="font-size:54px;text-align:center">🏆</div><h2 style="text-align:center">Misi Selesai!</h2><div id="finalScore" class="result-score"></div><div id="summary" style="text-align:center;line-height:1.8"></div>
+ <div style="background:#fff8df;padding:13px;border-radius:14px;margin:15px 0"><b>💚 Refleksi</b><p>Nama Asmaul Husna apa yang paling kamu ingat? Sebutkan satu perilaku baik yang sesuai dengan maknanya.</p></div>
+ <button class="primary full" onclick="resetGame()">🔄 MAIN LAGI</button>
+</section>
+<footer class="muted" style="text-align:center;padding:8px">Belajar dengan gembira • Jujur • Peduli • Berakhlak mulia</footer>
+</main>
+<script>
+const quiz1=[
+ {q:"Ar-Rahman berarti ...",o:["Maha Pengasih","Maha Melihat","Maha Mendengar","Maha Pencipta"],a:0,why:"Ar-Rahman berarti Maha Pengasih. Kita belajar menyayangi sesama."},
+ {q:"Al-'Alim berarti ...",o:["Maha Kuat","Maha Mengetahui","Maha Pemurah","Maha Pengampun"],a:1,why:"Al-'Alim berarti Maha Mengetahui. Kita semangat mencari ilmu."},
+ {q:"As-Sami' berarti ...",o:["Maha Melihat","Maha Pencipta","Maha Mendengar","Maha Pengasih"],a:2,why:"As-Sami' berarti Maha Mendengar. Biasakan berkata baik."}
+];
+const mapData=[
+ {name:"Ar-Rahman",meaning:"Maha Pengasih",behavior:"Menyayangi teman",benefit:"Menumbuhkan kepedulian"},
+ {name:"Al-'Alim",meaning:"Maha Mengetahui",behavior:"Rajin belajar",benefit:"Menambah ilmu"},
+ {name:"As-Sami'",meaning:"Maha Mendengar",behavior:"Mendengarkan dengan baik",benefit:"Menghargai orang lain"}
+];
+const race=[
+ {q:"Nama Allah yang berarti Maha Melihat adalah ...",o:["Al-Basir","Al-Khaliq","Ar-Rahman","Al-Ghaffar"],a:0,why:"Al-Basir berarti Maha Melihat. Biasakan berbuat baik dan jujur."},
+ {q:"Al-Khaliq berarti ...",o:["Maha Pengampun","Maha Pencipta","Maha Mendengar","Maha Mengetahui"],a:1,why:"Al-Khaliq berarti Maha Pencipta. Syukuri ciptaan Allah."},
+ {q:"Perilaku yang sesuai dengan Ar-Rahman adalah ...",o:["Mengejek teman","Mengabaikan teman","Menyayangi dan menolong","Berbohong"],a:2,why:"Kasih sayang ditunjukkan dengan menolong dan menyayangi sesama."}
+];
+let level=0,idx=0,score=0,correct=0,streak=0,locked=false,seconds=20,timerId=null,selectedTile=null,placements={};
+const $=id=>document.getElementById(id);
+function startGame(){level=0;idx=0;score=0;correct=0;streak=0;$("home").classList.add("hidden");$("result").classList.add("hidden");$("game").classList.remove("hidden");render()}
+function render(){clearInterval(timerId);locked=false;selectedTile=null;placements={};$("feedback").innerHTML="";$("next").classList.add("hidden");$("score").textContent=score;$("levelPill").textContent=`Level ${level+1} dari 3`;$("bar").style.width=((level*3+idx)/9*100)+"%";
+ if(level===0)renderQuiz(quiz1,"Level 1 — Kenali Asmaul Husna",false);
+ else if(level===1)renderMap();
+ else renderQuiz(race,"Level 3 — Mind Map Race",true);
+}
+function renderQuiz(data,title,timed){$("title").textContent=title;const q=data[idx];$("timer").textContent=timed?"⏱️ 20 detik":"⏱️ Santai dan teliti";
+ $("play").innerHTML=`<div style="background:#edf9ff;border-radius:15px;padding:16px;text-align:center"><div style="font-size:34px">📖 ✨</div><h2>${q.q}</h2></div><div class="options">${q.o.map((x,i)=>`<button class="option" onclick="answerQuiz(${i},${timed})">${String.fromCharCode(65+i)}. ${x}</button>`).join("")}</div>`;
+ if(timed){seconds=20;$("timer").textContent="⏱️ "+seconds+" detik";timerId=setInterval(()=>{if(locked)return;seconds--;$("timer").textContent="⏱️ "+seconds+" detik";if(seconds<=0){clearInterval(timerId);answerQuiz(-1,true)}},1000)}
+}
+function answerQuiz(choice,timed){if(locked)return;locked=true;clearInterval(timerId);const q=(level===0?quiz1:race)[idx];document.querySelectorAll(".option").forEach((b,i)=>{b.disabled=true;if(i===q.a)b.classList.add("correct");if(i===choice&&choice!==q.a)b.classList.add("wrong")});
+ if(choice===q.a){let pts=10;if(timed&&seconds>15)pts+=5;streak++;if(streak%3===0)pts+=5;score+=pts;correct++;feedback(true,`Benar! +${pts} poin. ${q.why}`)}else{streak=0;feedback(false,`${choice===-1?"Waktu habis!":"Belum tepat."} Jawaban yang benar: ${q.o[q.a]}. ${q.why}`)}finishTurn()}
+function renderMap(){const m=mapData[idx];$("title").textContent="Level 2 — Susun Mind Map";$("timer").textContent="⏱️ Tanpa batas waktu";
+ const all=[m.name,m.meaning,m.behavior,m.benefit].sort(()=>Math.random()-.5);
+ $("play").innerHTML=`<p class="muted">Seret kata ke cabang yang tepat. Di HP, kamu juga bisa mengetuk sebuah kata lalu mengetuk kotak tujuan.</p>
+ <div class="map"><div class="branches">
+ <div class="slot" data-slot="name" ondragover="allowDrop(event)" ondrop="dropTile(event)"><strong>📘 NAMA</strong><div class="drop">Letakkan kata di sini</div></div>
+ <div class="slot" data-slot="behavior" ondragover="allowDrop(event)" ondrop="dropTile(event)"><strong>🌱 CONTOH PERILAKU</strong><div class="drop">Letakkan kata di sini</div></div>
+ </div><div class="hub">🌟<br>ASMAUL<br>HUSNA</div><div class="branches">
+ <div class="slot" data-slot="meaning" ondragover="allowDrop(event)" ondrop="dropTile(event)"><strong>💡 ARTI</strong><div class="drop">Letakkan kata di sini</div></div>
+ <div class="slot" data-slot="benefit" ondragover="allowDrop(event)" ondrop="dropTile(event)"><strong>💜 MANFAAT</strong><div class="drop">Letakkan kata di sini</div></div>
+ </div></div><h3>🧩 Bank Kata</h3><div class="bank" id="bank">${all.map((x,i)=>`<button draggable="true" class="tile" data-word="${x}" ondragstart="dragTile(event)" onclick="selectTile(this)">${x}</button>`).join("")}</div>
+ <p class="muted small" id="mapHelp">Pilih keempat kata untuk melengkapi peta pikiran.</p><button class="full" onclick="checkMap()">✅ Periksa Mind Map</button>`;
+}
+function selectTile(el){if(locked||el.classList.contains("used"))return;document.querySelectorAll(".tile").forEach(t=>t.classList.remove("selected"));selectedTile=el;el.classList.add("selected");$("mapHelp").textContent="Sekarang ketuk cabang mind map yang sesuai."}
+function allowDrop(e){e.preventDefault();e.currentTarget.classList.add("over")}
+function dragTile(e){selectedTile=e.currentTarget;e.dataTransfer.setData("text/plain",e.currentTarget.dataset.word)}
+function dropTile(e){e.preventDefault();e.currentTarget.classList.remove("over");const word=e.dataTransfer.getData("text/plain")||(selectedTile?selectedTile.dataset.word:"");placeWord(e.currentTarget,word)}
+document.querySelectorAll(".slot").forEach(s=>s.addEventListener("dragleave",()=>s.classList.remove("over")));
+document.addEventListener("click",e=>{const slot=e.target.closest(".slot");if(slot&&selectedTile&&!locked){placeWord(slot,selectedTile.dataset.word)}});
+function placeWord(slot,word){if(!word||locked)return;const tile=[...document.querySelectorAll(".tile")].find(t=>t.dataset.word===word);if(!tile||tile.classList.contains("used"))return;const key=slot.dataset.slot;
+ if(placements[key]){const old=[...document.querySelectorAll(".tile")].find(t=>t.dataset.word===placements[key]);if(old)old.classList.remove("used")}
+ placements[key]=word;slot.querySelector(".drop").textContent=word;slot.classList.add("filled");tile.classList.add("used");tile.classList.remove("selected");selectedTile=null;$("mapHelp").textContent="Bagus! Lengkapi semua cabang, lalu periksa jawaban."}
+function checkMap(){if(locked)return;const m=mapData[idx],expected={name:m.name,meaning:m.meaning,behavior:m.behavior,benefit:m.benefit};const filled=Object.keys(expected).filter(k=>placements[k]).length;if(filled<4){feedback(false,"Lengkapi dulu keempat cabang mind map, ya.");return}
+ locked=true;let count=0;Object.keys(expected).forEach(k=>{const slot=document.querySelector(`[data-slot="${k}"]`);if(placements[k]===expected[k]){count++;slot.style.borderColor="#159768";slot.style.background="#e9fff0"}else{slot.style.borderColor="#ef82a1";slot.style.background="#fff0f4";slot.querySelector(".drop").textContent=placements[k]+" → seharusnya: "+expected[k]}});
+ const pts=count*5+(count===4?10:0);score+=pts;if(count===4){correct++;streak++;if(streak%3===0){score+=5;feedback(true,`Mind map sempurna! +${pts} poin${streak%3===0?" dan bonus beruntun jika tercapai":""}. ${m.name} berarti ${m.meaning}; perilakunya ${m.behavior.toLowerCase()}.`)}else feedback(true,`Mind map sempurna! +${pts} poin. ${m.name} berarti ${m.meaning}; perilakunya ${m.behavior.toLowerCase()}.`)}else{streak=0;feedback(false,`${count}/4 cabang benar. Kamu mendapat ${pts} poin. Periksa jawaban yang ditampilkan pada cabang merah, lalu ingat hubungan nama, arti, perilaku, dan manfaat.`)}finishTurn()}
+function feedback(ok,msg){$("feedback").innerHTML=`<div class="feedback ${ok?"good":"bad"}">${ok?"🎉":"🌱"} ${msg}</div>`;$("score").textContent=score}
+function finishTurn(){$("bar").style.width=((level*3+idx+1)/9*100)+"%";$("next").classList.remove("hidden");$("next").textContent=level===2&&idx===2?"🏆 Lihat Hasil":"Tantangan Berikutnya ➜"}
+function advance(){if(!locked)return;clearInterval(timerId);idx++;if(idx>=3){idx=0;level++}if(level>=3){finishGame();return}render()}
+function finishGame(){$("game").classList.add("hidden");$("result").classList.remove("hidden");$("finalScore").textContent=score+" poin";$("summary").innerHTML=`Kamu telah menyelesaikan 3 level!<br>Jawaban kuis benar: ${correct} tantangan tercatat.<br>${score>=100?"Luar biasa! Kamu Bintang Asmaul Husna!":score>=65?"Hebat! Terus tingkatkan pengetahuanmu.":"Tetap semangat! Berlatih lagi agar makin mahir."}`}
+function resetGame(){clearInterval(timerId);$("result").classList.add("hidden");$("home").classList.remove("hidden")}
+</script>
+</body>
+</html>
